@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <script type="text/javascript" src="javastuff.js"></script>
+</head>
 <style>
 
 .container{
@@ -45,7 +48,7 @@
     text-align: center;
 }
 
-#test11 {
+.test11{
  text-align: center;
  
  
@@ -115,23 +118,25 @@
     <br>
     </div>
 
-
-
-   <div id="test11">
-    <h1>Bianco Hills</h1>
-     <img src="images&gifs/bianco_hills1.webp"
-      style= "border: 5px solid #000000; padding:3px; margin:5px">
-    <p>
-      Bianco Hills is a hilly and picturesque countryside<br> 
-      region in the center of Isle Delfino and northwest of Delfino Plaza
+   <div class="test11">
+    <h1 id="message_A1">
+     Bianco Hills
+    </h1>
+    <img id="area_A1" src="images&gifs/bianco_hills1.webp" height="200px" width="300px">
+    <p id="message_B1">
+     Bianco Hills is a hilly and picturesque countryside<br> 
+     region in the center of Isle Delfino and northwest of Delfino Plaza
     </p>
    </div>
-  
-    
-
-    
-
+  <div id="buttons">
+  <button class="button_prev" onclick= prev();>Previous</button>
+  <button class="button_next" onclick= next();>Next</button>
   </div>
+
+ 
+
+  
+ </div>
   
    
     
