@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <title> Isle Delfino Booking Site </title>
+  <link rel="icon" type="image/x-icon" href="images&gifs/shineSprite_icon.gif">
   <script type="text/javascript" src="javastuff.js"></script>
 </head>
 <style>
 
 .container{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% 80%
     
     
 }
@@ -31,10 +34,19 @@
   
 }
 
+.misc_header{
+  text-align: center;
+  font-style: italic;
+  color: aliceblue;
+  font-size: larger;
+
+}
+
 .right_side_grid{
     background-color: rgb(248, 248, 248);
    
 }
+
 
 .main_text1{
   list-style-type: none;
@@ -42,22 +54,78 @@
   font-size: x-large;
   font-weight: bold;
   text-align: center;
+  font-style: italic;
+}
+
+.newsletterlink{
+  text-align: center;
+  font-size: xx-large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .video_1{
-    text-align: center;
+  text-align: center;
 }
 
 .test11{
  text-align: center;
  
- 
+}
+
+#area_A1{
+  border: 3px solid black;
+}
+
+.area_IMG{
+  border: 1px solid black;
+
+}
+
+div.desc{
+  padding: 15px;
+  text-align: center;
+  font-style: italic;
+  font-size: larger;
+}
+
+.responsive {
+  padding: 20px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive{
+    width: 100%;
+  }
 }
 
 
 
+@media only screen and (max-width: 538px) {
+  .responsive{
+    width: 100%;
+  }
+}
 
+@media only screen and (max-width: 300px) {
+  .responsive{
+    width: 100%;
+  }
+}
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
     
@@ -72,15 +140,31 @@
   <br>
   <br>
   <ul class="left_link_list">
+   <li class="misc_header"> Main</li>
+   <br>
    <li> <a href="Home_page.html"> Home </a></li>
    <br>
    <li> <a href="pages(other)/About_page.html"> About </a></li>
+   <br>
+   <li> <a href="pages(other)/News"> News </a></li>
    <br>
    <li> <a href="pages(other)/Contact_page.html"> Contact </a></li>
    <br>
    <li> <a href="pages(other)/Login_page.html"> Login </a></li>
    <br>
-    
+   <br>
+   <br>
+   <li class="misc_header"> MISC. </li>
+   <br>
+   <li> <a href="pages(other)/Sound_test.html"> Music Player!</a></li>
+   <br>
+   <li><a href="pages(other)/Gallery.html"> Photo Gallery! </a></li>
+   <br>
+   <li><img src="images&gifs/dancing_pianta.gif" width="150px" height="150px"></li>
+   <li class="misc_header"> Background-Music</li>
+   <li><embed src="video&audio/plazaTheme_remixPH.mp3" loop="true" autostart="true" class="music_player1" width="150px" height="50px"></li></embed>
+   <br>
+   <br>
    <div id="google_translate_element"></div>
 
     <script type="text/javascript">
@@ -96,18 +180,23 @@
  
  <div class="right_side_grid"> 
   <div class="video_1">
-   <video poster="images&gifs/isle_delfino_logo.png" controls>
-        <source src="video&audio/welcome_video.mp4" type="video/mp4">
+    <video poster="images&gifs/isle_delfino_logo.png" controls>
+      <source src="video&audio/welcome_video.mp4" type="video/mp4">
+        
    </video>
   </div>
     
    <div class="main_text1">
         <p> WELCOME! To the isle defline booking website! Whether you want to escape to the lush green
-        hills of bianco village, or take a dive in noki bay, we have you covered, simple choose one
-        of our beautifle locals to get booking today!
+        hills of bianco village, or take a dive in noki bay, we have you covered, simply choose one
+        of our beautiful locals to get booking today!
         </p>
    </div>
+   <div class="newsletterlink">
+   <a href="pages(other)/Newsletter_page.html">Subsribe to our newsletter for important news, updates and offers! &#128231;</a>
 
+
+   </div>
     <div br>
       <br>
         <br>
@@ -118,21 +207,84 @@
     <br>
     </div>
 
-   <div class="test11">
-    <h1 id="message_A1">
-     Bianco Hills
-    </h1>
-    <img id="area_A1" src="images&gifs/bianco_hills1.webp" height="200px" width="300px">
-    <p id="message_B1">
-     Bianco Hills is a hilly and picturesque countryside<br> 
-     region in the center of Isle Delfino and northwest of Delfino Plaza
-    </p>
-   </div>
-  <div id="buttons">
-  <button class="button_prev" onclick= prev();>Previous</button>
-  <button class="button_next" onclick= next();>Next</button>
-  </div>
 
+   <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images&gifs/bianco_hills1.webp">
+        <img src="images&gifs/bianco_hills1.webp" alt="Bianco Hills" class="area_IMG">
+      </a>  
+      <div class="desc"> Bianco Hills </div>
+    </div>  
+   </div>
+
+   <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images&gifs/rico_harbour1.png">
+        <img src="images&gifs/rico_harbour1.png" alt="Rico Harbour" width="300" height="200" class="area_IMG">
+      </a>  
+      <div class="desc"> Rico Harbour </div>
+    </div>  
+   </div>
+
+   <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images&gifs/gelato_beach1.webp">
+        <img src="images&gifs/gelato_beach1.webp" alt="Gelato Beach" width="300" height="200" class="area_IMG">
+      </a>  
+      <div class="desc"> Gelato beach </div>
+    </div>  
+   </div>
+
+   <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images&gifs/pinna_park1.webp">
+        <img src="images&gifs/pinna_park1.webp" alt="Pinna Park" width="300" height="200" class="area_IMG">
+      </a>  
+      <div class="desc"> Pinna Park </div>
+    </div>  
+   </div>
+
+   <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images&gifs/sirena_beach1.webp">
+        <img src="images&gifs/sirena_beach1.webp" alt="Sirena Beach" width="300" height="200" class="area_IMG">
+      </a>  
+      <div class="desc"> Sirena Beach </div>
+    </div>  
+   </div>
+
+   <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images&gifs/noki_bay1.webp">
+        <img src="images&gifs/noki_bay1.webp" alt="Noki Bay" width="300" height="200" class="area_IMG">
+      </a>  
+      <div class="desc"> Noki Bay </div>
+    </div>  
+   </div>
+
+   <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images&gifs/pianta_village1.webp">
+        <img src="images&gifs/pianta_village1.webp" alt="Pianta Village" width="300" height="200" class="area_IMG">
+      </a>  
+      <div class="desc"> Pianta Village </div>
+    </div>  
+   </div>
+
+   <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images&gifs/corona_mountain1.webp">
+        <img src="images&gifs/corona_mountain1.webp" alt="Corona Mountain" width="300" height="200" class="area_IMG">
+      </a>  
+      <div class="desc"> Corona Mountain <br> !!!CAUTION!!! <br> OUT OF SERVICE </div>
+    </div>  
+   </div>
+
+
+   <div class="clearfix"></div>
+
+ 
+  
  
 
   
