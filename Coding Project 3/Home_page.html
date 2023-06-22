@@ -63,6 +63,12 @@
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+
+
+.checked {
+  color: orange;
+}
+
 .video_1{
   text-align: center;
 }
@@ -153,27 +159,40 @@ div.desc{
    <li> <a href="pages(other)/Login_page.html"> Login </a></li>
    <br>
    <br>
-   <br>
+   
    <li class="misc_header"> MISC. </li>
    <br>
    <li> <a href="pages(other)/Sound_test.html"> Music Player!</a></li>
    <br>
    <li><a href="pages(other)/Gallery.html"> Photo Gallery! </a></li>
    <br>
-   <li><img src="images&gifs/dancing_pianta.gif" width="150px" height="150px"></li>
+   <br>
+   <li class="misc_header"> Follow Our Socials!  </li>
+     <br>
+     <li> <img src="social-icons/Twitter_icon.png" width="50px" height="50px">
+          <img src="social-icons/insta_icon.png" width="50px" height="50px">
+          <img src="social-icons/yt_icon.png" width="50px" height="50px">
+    </li>
+   <br>
+   <br>
    <li class="misc_header"> Background-Music</li>
+   <audio src="video&audio/Pianta voice.mp3" id="pianta_v1"></audio> 
+   <li><img src="images&gifs/dancing_pianta.gif" width="150px" height="150px" onclick="document.getElementById('pianta_v1').play()"></li>
    <li><embed src="video&audio/plazaTheme_remixPH.mp3" loop="true" autostart="true" class="music_player1" width="150px" height="50px"></li></embed>
    <br>
    <br>
+   <li class="misc_header"> Select a language </li>
+   <br>
    <div id="google_translate_element"></div>
 
-    <script type="text/javascript">
-    function googleTranslateElementInit() {
-     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-    </script>
+   <script type="text/javascript">
+   function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+   }
+   </script>
 
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+     
   </ul>
  </div>
 
@@ -187,9 +206,10 @@ div.desc{
   </div>
     
    <div class="main_text1">
-        <p> WELCOME! To the isle defline booking website! Whether you want to escape to the lush green
-        hills of bianco village, or take a dive in noki bay, we have you covered, simply choose one
-        of our beautiful locals to get booking today!
+        <p>
+          WELCOME! To the isle defline booking website! Whether you want to escape to the lush green
+          hills of bianco village, or take a dive in noki bay, we have you covered, simply choose one
+          of our beautiful locals to get booking today!
         </p>
    </div>
    <div class="newsletterlink">
@@ -282,6 +302,13 @@ div.desc{
 
 
    <div class="clearfix"></div>
+ 
+
+
+
+   </div>
+
+
 
  
   
