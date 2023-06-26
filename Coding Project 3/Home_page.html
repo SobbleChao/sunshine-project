@@ -43,7 +43,8 @@
 }
 
 .right_side_grid{
-    background-color: rgb(248, 248, 248);
+    
+    background-image: url(images&gifs/bg2.jpg);
    
 }
 
@@ -69,9 +70,57 @@
   color: orange;
 }
 
+
 .video_1{
   text-align: center;
 }
+
+@media (max-width: 700px){
+  .mainpage_vidthumb{
+    width: 80%;
+    height: 60%;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .left_link_list{
+    text-align: center;
+    font-size: 90%;
+  }
+  .misc_header{
+    text-align: center;
+    font-size: small;
+  }
+  .social_media_icons{
+    width: 50%;
+    height: 50%;
+  }
+  .music1{
+    width: 50%;
+    height: 50%;
+  }
+  .music_player1{
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .mushroom_logo{
+    text-align: center;
+    width: 100%;
+    height: 5%;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 .test11{
  text-align: center;
@@ -95,9 +144,8 @@ div.desc{
 }
 
 .responsive {
-  padding: 20px;
+  padding: 30px;
   float: left;
-  width: 24.99999%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -142,7 +190,7 @@ div.desc{
 
 <div class="container">
  <div class="left_side_grid"> 
-  <img src="images&gifs/mushroom_kingdom_logo.webp" width="150px" height="150px">
+  <img src="images&gifs/mushroom_kingdom_logo.webp" class="mushroom_logo" width="150px" height="150px">
   <br>
   <br>
   <ul class="left_link_list">
@@ -169,16 +217,16 @@ div.desc{
    <br>
    <li class="misc_header"> Follow Our Socials!  </li>
      <br>
-     <li> <img src="social-icons/Twitter_icon.png" width="50px" height="50px">
-          <img src="social-icons/insta_icon.png" width="50px" height="50px">
-          <img src="social-icons/yt_icon.png" width="50px" height="50px">
+     <li> <img src="social-icons/Twitter_icon.png" width="50px" height="50px" class="social_media_icons">
+          <img src="social-icons/insta_icon.png" width="50px" height="50px" class="social_media_icons">
+          <img src="social-icons/yt_icon.png" width="50px" height="50px" class="social_media_icons">
     </li>
    <br>
    <br>
-   <li class="misc_header"> Background-Music</li>
+   <li class="misc_header"> Background Music</li>
    <audio src="video&audio/Pianta voice.mp3" id="pianta_v1"></audio> 
-   <li><img src="images&gifs/dancing_pianta.gif" width="150px" height="150px" onclick="document.getElementById('pianta_v1').play()"></li>
-   <li><embed src="video&audio/plazaTheme_remixPH.mp3" loop="true" autostart="true" class="music_player1" width="150px" height="50px"></li></embed>
+   <li><img src="images&gifs/dancing_pianta.gif" width="150px" height="150px" onclick="document.getElementById('pianta_v1').play()" class="music1"></li>
+   <li><embed src="video&audio/Remix Super Mario Sunshine - Isle Delfino [Re-arranged edit.].mp3" loop="true" autostart="true" class="music_player1" width="150px" height="50px"></li></embed>
    <br>
    <br>
    <li class="misc_header"> Select a language </li>
@@ -199,7 +247,7 @@ div.desc{
  
  <div class="right_side_grid"> 
   <div class="video_1">
-    <video poster="images&gifs/isle_delfino_logo.png" controls>
+    <video poster="images&gifs/isle_delfino_logo.png" height="300px" width="500px" class="mainpage_vidthumb" controls>
       <source src="video&audio/welcome_video.mp4" type="video/mp4">
         
    </video>
