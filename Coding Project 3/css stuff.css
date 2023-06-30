@@ -1,0 +1,180 @@
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 80%
+    
+    
+}
+
+.container > div{
+    border: 1px solid black;
+}
+
+/*------------------------------------------------*/
+
+.left_side_grid{
+    background-color: rgb(184, 85, 85);
+    text-align: center;
+}
+
+.left_link_list{
+  list-style-type: none;
+  padding: 10px;
+  font-size: x-large;
+  font-weight: bold;
+  
+}
+
+.misc_header{
+  text-align: center;
+  font-style: italic;
+  color: aliceblue;
+  font-size: larger;
+
+}
+
+
+/*-------------------------------------------------------------------------------*/
+
+.right_side_grid{
+    
+    background-image: url(images&gifs/bg2.jpg);
+   
+}
+
+
+.main_text1{
+  list-style-type: none;
+  padding: 0px;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+}
+
+.newsletterlink{
+  text-align: center;
+  font-size: xx-large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.checked {
+  color: orange;
+}
+
+
+.video_1{
+  text-align: center;
+}
+
+
+/*----------------------------------------------------------*/
+
+
+
+@media (max-width: 700px){
+  .mainpage_vidthumb{
+    width: 80%;
+    height: 60%;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .left_link_list{
+    text-align: center;
+    font-size: 90%;
+  }
+  .misc_header{
+    text-align: center;
+    font-size: small;
+  }
+  .social_media_icons{
+    width: 50%;
+    height: 50%;
+  }
+  .music1{
+    width: 50%;
+    height: 50%;
+  }
+  .music_player1{
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .mushroom_logo{
+    text-align: center;
+    width: 100%;
+    height: 5%;
+  }
+}
+
+/*-------------------------------*/
+
+.test11{
+ text-align: center;
+ 
+}
+
+#area_A1{
+  border: 3px solid black;
+}
+
+.area_IMG{
+  border: 1px solid black;
+
+}
+
+/*-----------------------------------------------------*/
+
+div.desc{
+  padding: 15px;
+  text-align: center;
+  font-style: italic;
+  font-size: larger;
+}
+
+.responsive {
+  padding: 35px;
+  float: left;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+    padding: 35px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive{
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (max-width: 538px) {
+  .responsive{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .responsive{
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+

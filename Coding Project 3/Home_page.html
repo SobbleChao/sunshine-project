@@ -1,194 +1,22 @@
 <!DOCTYPE html>
 <html>
+<!--this contains code such as the page title, page icon, links to css/js,
+etc., stuff that does not appear on the webpage itself-->
 <head>
   <meta charset="UTF-8">
   <title> Isle Delfino Booking Site </title>
   <link rel="icon" type="image/x-icon" href="images&gifs/shineSprite_icon.gif">
   <script type="text/javascript" src="javastuff.js"></script>
+  <link rel="stylesheet" href="css stuff.css" type="text/css">
 </head>
-<style>
-
-.container{
-    display: grid;
-    grid-template-columns: 20% 80%
-    
-    
-}
-
-.container > div{
-    border: 1px solid black;
-}
 
 
-
-.left_side_grid{
-    background-color: rgb(184, 85, 85);
-    text-align: center;
-}
-
-.left_link_list{
-  list-style-type: none;
-  padding: 10px;
-  font-size: x-large;
-  font-weight: bold;
-  
-}
-
-.misc_header{
-  text-align: center;
-  font-style: italic;
-  color: aliceblue;
-  font-size: larger;
-
-}
-
-.right_side_grid{
-    
-    background-image: url(images&gifs/bg2.jpg);
-   
-}
-
-
-.main_text1{
-  list-style-type: none;
-  padding: 0px;
-  font-size: x-large;
-  font-weight: bold;
-  text-align: center;
-  font-style: italic;
-}
-
-.newsletterlink{
-  text-align: center;
-  font-size: xx-large;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-
-
-.checked {
-  color: orange;
-}
-
-
-.video_1{
-  text-align: center;
-}
-
-@media (max-width: 700px){
-  .mainpage_vidthumb{
-    width: 80%;
-    height: 60%;
-  }
-}
-
-
-@media (max-width: 650px) {
-  .left_link_list{
-    text-align: center;
-    font-size: 90%;
-  }
-  .misc_header{
-    text-align: center;
-    font-size: small;
-  }
-  .social_media_icons{
-    width: 50%;
-    height: 50%;
-  }
-  .music1{
-    width: 50%;
-    height: 50%;
-  }
-  .music_player1{
-    width: 90%;
-  }
-}
-
-@media (max-width: 700px) {
-  .mushroom_logo{
-    text-align: center;
-    width: 100%;
-    height: 5%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-.test11{
- text-align: center;
- 
-}
-
-#area_A1{
-  border: 3px solid black;
-}
-
-.area_IMG{
-  border: 1px solid black;
-
-}
-
-div.desc{
-  padding: 15px;
-  text-align: center;
-  font-style: italic;
-  font-size: larger;
-}
-
-.responsive {
-  padding: 30px;
-  float: left;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .responsive{
-    width: 100%;
-  }
-}
-
-
-
-@media only screen and (max-width: 538px) {
-  .responsive{
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .responsive{
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-    
-</style>
-
-
+<!--body is what is shown on the webpage-->
 <body>
 
+<!--this div contains both the left and right grids-->
 <div class="container">
+ <!--this contains everything found in the left grid, logos, titles, links etc.-->
  <div class="left_side_grid"> 
   <img src="images&gifs/mushroom_kingdom_logo.webp" class="mushroom_logo" width="150px" height="150px">
   <br>
@@ -226,7 +54,7 @@ div.desc{
    <li class="misc_header"> Background Music</li>
    <audio src="video&audio/Pianta voice.mp3" id="pianta_v1"></audio> 
    <li><img src="images&gifs/dancing_pianta.gif" width="150px" height="150px" onclick="document.getElementById('pianta_v1').play()" class="music1"></li>
-   <li><embed src="video&audio/Remix Super Mario Sunshine - Isle Delfino [Re-arranged edit.].mp3" loop="true" autostart="true" class="music_player1" width="150px" height="50px"></li></embed>
+   <li><embed src="video&audio/Remix Super Mario Sunshine - Isle Delfino [Re-arranged edit.].mp3" loop="true" autostart="true" class="music_player1" ></li></embed>
    <br>
    <br>
    <li class="misc_header"> Select a language </li>
@@ -244,7 +72,7 @@ div.desc{
   </ul>
  </div>
 
- 
+ <!--this contains everything found in the right side grid, logos, videos, images, etc.-->
  <div class="right_side_grid"> 
   <div class="video_1">
     <video poster="images&gifs/isle_delfino_logo.png" height="300px" width="500px" class="mainpage_vidthumb" controls>
@@ -278,8 +106,8 @@ div.desc{
 
    <div class="responsive">
     <div class="gallery">
-      <a target="_blank" href="images&gifs/bianco_hills1.webp">
-        <img src="images&gifs/bianco_hills1.webp" alt="Bianco Hills" class="area_IMG">
+      <a target="_blank" href="images&gifs/bianco_hills1.jpg">
+        <img src="images&gifs/bianco_hills1.jpg" alt="Bianco Hills" class="area_IMG">
       </a>  
       <div class="desc"> Bianco Hills </div>
     </div>  
@@ -287,8 +115,8 @@ div.desc{
 
    <div class="responsive">
     <div class="gallery">
-      <a target="_blank" href="images&gifs/rico_harbour1.png">
-        <img src="images&gifs/rico_harbour1.png" alt="Rico Harbour" width="300" height="200" class="area_IMG">
+      <a target="_blank" href="images&gifs/rico_harbour1.jpg">
+        <img src="images&gifs/rico_harbour1.jpg" alt="Rico Harbour" width="300" height="200" class="area_IMG">
       </a>  
       <div class="desc"> Rico Harbour </div>
     </div>  
@@ -296,8 +124,8 @@ div.desc{
 
    <div class="responsive">
     <div class="gallery">
-      <a target="_blank" href="images&gifs/gelato_beach1.webp">
-        <img src="images&gifs/gelato_beach1.webp" alt="Gelato Beach" width="300" height="200" class="area_IMG">
+      <a target="_blank" href="images&gifs/gelato_beach1.jpg">
+        <img src="images&gifs/gelato_beach1.jpg" alt="Gelato Beach" width="300" height="200" class="area_IMG">
       </a>  
       <div class="desc"> Gelato beach </div>
     </div>  
@@ -305,8 +133,8 @@ div.desc{
 
    <div class="responsive">
     <div class="gallery">
-      <a target="_blank" href="images&gifs/pinna_park1.webp">
-        <img src="images&gifs/pinna_park1.webp" alt="Pinna Park" width="300" height="200" class="area_IMG">
+      <a target="_blank" href="images&gifs/pinna_park1.jpg">
+        <img src="images&gifs/pinna_park1.jpg" alt="Pinna Park" width="300" height="200" class="area_IMG">
       </a>  
       <div class="desc"> Pinna Park </div>
     </div>  
@@ -314,8 +142,8 @@ div.desc{
 
    <div class="responsive">
     <div class="gallery">
-      <a target="_blank" href="images&gifs/sirena_beach1.webp">
-        <img src="images&gifs/sirena_beach1.webp" alt="Sirena Beach" width="300" height="200" class="area_IMG">
+      <a target="_blank" href="images&gifs/sirena_beach1.jpg">
+        <img src="images&gifs/sirena_beach1.jpg" alt="Sirena Beach" width="300" height="200" class="area_IMG">
       </a>  
       <div class="desc"> Sirena Beach </div>
     </div>  
@@ -323,8 +151,8 @@ div.desc{
 
    <div class="responsive">
     <div class="gallery">
-      <a target="_blank" href="images&gifs/noki_bay1.webp">
-        <img src="images&gifs/noki_bay1.webp" alt="Noki Bay" width="300" height="200" class="area_IMG">
+      <a target="_blank" href="images&gifs/noki_bay1.jpg">
+        <img src="images&gifs/noki_bay1.jpg" alt="Noki Bay" width="300" height="200" class="area_IMG">
       </a>  
       <div class="desc"> Noki Bay </div>
     </div>  
@@ -332,8 +160,8 @@ div.desc{
 
    <div class="responsive">
     <div class="gallery">
-      <a target="_blank" href="images&gifs/pianta_village1.webp">
-        <img src="images&gifs/pianta_village1.webp" alt="Pianta Village" width="300" height="200" class="area_IMG">
+      <a target="_blank" href="images&gifs/pianta_village1.jpg">
+        <img src="images&gifs/pianta_village1.jpg" alt="Pianta Village" width="300" height="200" class="area_IMG">
       </a>  
       <div class="desc"> Pianta Village </div>
     </div>  
@@ -341,8 +169,8 @@ div.desc{
 
    <div class="responsive">
     <div class="gallery">
-      <a target="_blank" href="images&gifs/corona_mountain1.webp">
-        <img src="images&gifs/corona_mountain1.webp" alt="Corona Mountain" width="300" height="200" class="area_IMG">
+      <a target="_blank" href="images&gifs/corona_mountain1.jpg">
+        <img src="images&gifs/corona_mountain1.jpg" alt="Corona Mountain" width="300" height="200" class="area_IMG">
       </a>  
       <div class="desc"> Corona Mountain <br> !!!CAUTION!!! <br> OUT OF SERVICE </div>
     </div>  
