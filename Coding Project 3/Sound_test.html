@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<!--this contains code such as the page title, page icon, links to css/js,
+etc., stuff that does not appear on the webpage itself-->
+<head>
+  <meta charset="UTF-8">
+  <title> Isle Delfino Booking Site </title>
+  <link rel="icon" type="image/x-icon" href="images&gifs/shineSprite_icon.gif">
+  <script type="text/javascript" src="javascriptstuff.js"></script>
+  <link rel="stylesheet" href="css stuff.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+
+
+<!--body is what is shown on the webpage-->
+<body>
+
+<!--this div contains both the left and right grids-->
+<div class="container">
+  <!--this contains everything found in the left grid, logos, titles, links etc.-->
+  <div class="left_side_grid"> 
+   <img src="images&gifs/mushroom_kingdom_logo.webp" class="mushroom_logo" width="150px" height="150px">
+   <br>
+   <br>
+   <ul class="left_link_list">
+    <li class="misc_header"> Main</li>
+    <br>
+    <li> <a href="Home_page.html"> Home </a></li>
+    <br>
+    <li> <a href="About_page.html"> About </a></li>
+    <br>
+    <li> <a href="News"> News </a></li>
+    <br>
+    <li> <a href="Contact_page.html"> Contact </a></li>
+    <br>
+    <li> <a href="Login_page.html"> Login </a></li>
+    <br>
+    <br>
+    
+    <li class="misc_header"> MISC. </li>
+    <br>
+    <li> <a href="Sound_test.html"> Music Player!</a></li>
+    <br>
+    <li><a href="Gallery.html"> Photo Gallery! </a></li>
+    <br>
+    <br>
+    <li class="misc_header"> Follow Our Socials!  </li>
+      <br>
+      <li> <img src="social-icons/Twitter_icon.png" width="50px" height="50px" class="social_media_icons">
+           <img src="social-icons/insta_icon.png" width="50px" height="50px" class="social_media_icons">
+           <img src="social-icons/yt_icon.png" width="50px" height="50px" class="social_media_icons">
+     </li>
+    <br>
+    <br>
+    <li class="misc_header"> Background Music</li>
+    <audio src="video&audio/Pianta voice.mp3" id="pianta_v1"></audio> 
+    <li><img src="images&gifs/dancing_pianta.gif" width="150px" height="150px" onclick="document.getElementById('pianta_v1').play()" class="music1"></li>
+    <li><embed src="video&audio/Remix Super Mario Sunshine - Isle Delfino [Re-arranged edit.].mp3" loop="true" autostart="true" class="music_player1"></li></embed>
+    <br>
+    <br>
+    <li class="misc_header"> Select a language </li>
+    <br>
+    <div id="google_translate_element"></div>
+ 
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+ 
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+      
+   </ul>
+  </div>
+
+
+ <div class="right_side_grid_music"> 
+  <h1>Music Player</h1>
+
+  <div class="music-container play">
+   <div class="music-info">
+    <h4 id="title">Bianco Hills</h4>
+    <div class="progress-container">
+      <div class="progress"></div>
+
+    </div>
+   </div>
+   <audio src="video&audio/Remix Super Mario Sunshine - Isle Delfino [Re-arranged edit.].mp3" id="mp3_1"?></audio>
+   
+   <div class="img-container">
+    <img src="images&gifs/sunshinedisc_USA.png" alt="music cover 1" id="cover1" />
+
+   </div>
+   
+   <div class="navigation">
+    <button id="prev" class="action-btn">
+      <i class="fas fa-backward"></i>
+    </button>
+    <button id="play" class="action-btn action-btn-big">
+      <i class="fas fa-play"></i>
+    </button>
+    <button id="next" class="action-btn">
+      <i class="fas fa-forward"></i>
+    </button>
+
+   </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
